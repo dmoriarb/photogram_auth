@@ -5,6 +5,24 @@
   </h1>
 </div>
 
+  <% @photos.each do |photo| %>
+<div class="panel panel-default">
+  <div class="panel-heading"> <%= photo.user_id %>  </div>
+  <div class="panel-body">
+      <table class="table table-striped table-hover">
+    <tr> <img src= "<%= photo.image %>" height="250px" > </tr>
+    <tr> 
+  </table>
+  </div>
+</div>
+
+<% end %>
+
+
+
+
+
+
 <div class="row">
   <div class="col-md-12">
     <table class="table table-striped table-hover">
